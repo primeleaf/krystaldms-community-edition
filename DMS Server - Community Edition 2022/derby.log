@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Wed Jul 27 11:10:01 IST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-0182-3e2b-4b97-00000d55aab0 
+on database directory K:\Projects\JAVA DMS Projects\2022\DMS Server - Community Edition 2022\data\KRYSTALCE  with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/K:/Projects/JAVA%20DMS%20Projects/2022/DMS%20Server%20-%20Community%20Edition%202022/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_301-b09
+user.dir=K:\Projects\JAVA DMS Projects\2022\DMS Server - Community Edition 2022
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

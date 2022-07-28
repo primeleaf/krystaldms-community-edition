@@ -1,0 +1,37 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+}
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -48px;
+  padding: 0 0 48px;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+#wrap > .container-notification {
+  padding: 35px 0px 0;
+}
+#wrap > .container-fluid {
+  padding: 25px 15px 0;
+}
+#wrap > .container {
+  padding: 40px 15px 0;
+}
+#wrap > .container.login {
+  padding: 90px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}

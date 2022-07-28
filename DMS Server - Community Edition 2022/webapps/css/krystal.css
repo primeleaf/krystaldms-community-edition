@@ -1,0 +1,365 @@
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/open-sans-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/open-sans-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/open-sans-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/open-sans-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/open-sans-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/open-sans-v20-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+.highlighted{
+	background:yellow;
+}
+
+.help-block{
+	color:red;
+	font-weight:500;
+}
+#errorDiv{color:#f00;display:none;padding:1rem;}
+.has-error{color:#f00;}
+.hidden{display:none;}
+.welcome{font-size:80px;color:#fff;text-align: center;}
+.cover{ background: url("/images/bg.jpg");background-color:rgba(255,255,255,1); background-position: center;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;background-position: center;  background-repeat: no-repeat; background-size: cover;}
+.col-centered{float: none; margin: 0 auto;}
+.pre-login {background-color: rgba(255,255,255,0.7); border:0px;}
+.navbar{padding:0px; margin:0px;}
+.navbar-nav .nav-item{white-space: nowrap;padding:10px 8px;}
+.krystallogo{width:28px;}
+.dropdown-main{
+	max-height: 36rem;
+	overflow: auto;
+}
+table.hitlist td,th{white-space: nowrap;}  
+input.search{border: 1px solid #cccccc; padding:2px;}
+input.search:focus {  
+	border-color: #00ccff; /*Saumil Shah*/
+  	outline: 0;
+  	box-shadow: 0 0 0 0.25rem rgba(27, 196, 255, 0.25);/*Saumil Shah*/
+}
+.message{background: rgba(225,225,225,0.2); color:#333; padding:8px; border:1px solid #ccc; margin-bottom:8px; border-radius: 8px;}
+.textareacontent{white-space: pre-wrap; font-size:14px;}
+.img-icon{margin:0px 4px 0px 0px; border:0px;}
+.highlight { background-color: yellow }
+.no-sort::after { display: none!important; }
+.no-sort { pointer-events: none!important; cursor: default!important; }
+.scrolldiv{overflow: auto; overflow-y: auto;  overflow-x: hidden; max-height:550px; }
+.bulkUploadForm{border:0px;padding:0px;margin:0px;}
+.bgimage{background:url('/images/bg.jpg');}
+#controlPanelTable{width:100%;}
+#controlPanelTable th{color: #f04124;}
+table.dataTable span.highlight { background-color: #FFFF88;}
+.spinner-wait{width: 2rem; height: 2rem;}
+.profile{
+	position: relative;
+}
+.profile-image{
+  display: block;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  /*width: 100%;*/
+  aspect-ratio:1;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #d0d0d0;
+}
+.profile:hover .overlay {
+  opacity: 1;
+}
+
+.profile-pic-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  position: relative;
+  
+}
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  *display: inline;
+}
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+  *display: inline;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  *display: inline;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+ 
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon {
+  display: block;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility:hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-value {
+  display: block;
+  -webkit-transform: translateZ(0);
+  transform:translateZ(0);
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value {
+  position: absolute;
+}
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+}
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.odometer.odometer-auto-theme .odometer-value, .odometer.odometer-theme-default .odometer-value {
+  text-align: center;
+}
+
+/*Rate it CSS */
+.rateit {
+    display: -moz-inline-box;
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.rateit .rateit-range
+{
+    position: relative;
+    display: -moz-inline-box;
+    display: inline-block;
+    background: url(/images/star.gif);
+    height: 16px;
+    outline: none;
+}
+
+.rateit .rateit-range * {
+    display:block;
+}
+
+/* for IE 6 */
+* html .rateit, * html .rateit .rateit-range
+{
+    display: inline;
+}
+
+/* for IE 7 */
+* + html .rateit, * + html .rateit .rateit-range
+{
+    display: inline;
+}
+
+.rateit .rateit-hover, .rateit .rateit-selected
+{
+    position: absolute;
+    left: 0px;
+}
+
+.rateit .rateit-hover-rtl, .rateit .rateit-selected-rtl
+{
+    left: auto;
+    right: 0px;
+}
+
+.rateit .rateit-hover
+{
+    background: url(/images/star.gif) left -32px;
+}
+
+.rateit .rateit-hover-rtl
+{
+    background-position: right -32px;
+}
+
+.rateit .rateit-selected
+{
+    background: url(/images/star.gif) left -16px;
+}
+
+.rateit .rateit-selected-rtl
+{
+    background-position: right -16px;
+}
+
+.rateit .rateit-preset
+{
+    background: url(/images/star.gif) left -48px;
+}
+
+.rateit .rateit-preset-rtl
+{
+    background: url(/images/star.gif) left -48px;
+}
+
+.rateit button.rateit-reset
+{
+    background: url(/images/delete.gif) 0 0;
+    width: 16px;
+    height: 16px;
+    display: -moz-inline-box;
+    display: inline-block;
+    outline: none;
+    border:none;
+    padding: 0;
+}
+
+.rateit button.rateit-reset:hover, .rateit button.rateit-reset:focus
+{
+    background-position: 0 -16px;
+}
+
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Adjust as needed */
+}
+audio::-internal-media-controls-download-button {
+    display:none;
+}
+
+audio::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+audio::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Adjust as needed */
+}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.preloader{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(/images/loading-gif.gif) center no-repeat #fff;
+}
+#tree li{font-size:13px;font-weight: normal;}
+li{list-style:none;}
+ul {list-style: none;padding-left: 0px;margin: 0px;}
+#divProductDetail li:first-child {margin-top: 3px;margin-left: 15px;}
+#operateGrp li{display: inline;}
+#operateGrp li { margin: 21px; width: 60px; height: 57px; line-height: 52px; text-align: center; }
+#operateGrp li > img { cursor: pointer; }
+
+
+.input-group>.twitter-typeahead {
+     position: relative;
+     -ms-flex: 1 1 auto;
+     -webkit-box-flex: 1;
+     flex: 1 1 auto;
+     width: 1%;
+     margin-bottom: 0;
+ }
+ .input-group>.twitter-typeahead:not(:last-child) {
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
+ }
+ .input-group>.twitter-typeahead>.tt-input {
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
+ }
+ .form-control.tt-input:focus {
+     z-index: 3;
+     
+ }
+
+ .zonalcontainer {
+	position: relative;
+	background-image: linear-gradient(to bottom right, #000000, #cccccc);
+	overflow:auto;
+}
+#container{
+	position: relative;
+}
+#imageTemp {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+}

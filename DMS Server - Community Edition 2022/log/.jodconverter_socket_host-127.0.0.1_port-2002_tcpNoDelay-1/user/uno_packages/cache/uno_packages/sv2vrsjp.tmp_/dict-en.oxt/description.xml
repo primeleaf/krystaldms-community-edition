@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006"  xmlns:xlink="http://www.w3.org/1999/xlink">
+ 
+    <version value="2021.09.01" />
+    <identifier value="org.openoffice.en.hunspell.dictionaries" />
+	
+    <display-name>
+        <name lang="en">English spelling, hyphenation dictionaries and thesaurus</name>
+		<name lang="pt">Corretores ortográficos, hifenizadores e dicionário de sinónimos para inglês.</name>
+    </display-name>
+	
+    <platform value="all" />
+
+    <dependencies>
+        <OpenOffice.org-minimal-version value="3.4" d:name="OpenOffice.org 3.4" />
+    </dependencies>
+	
+    <icon>
+        <default xlink:href="English.png" />
+    </icon>
+
+    <publisher>
+        <name xlink:href="http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" lang="en">Marco A.G.Pinto</name>
+    </publisher>
+	
+</description>
+

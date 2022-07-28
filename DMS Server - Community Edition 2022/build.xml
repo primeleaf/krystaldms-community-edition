@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<project name="Primeleaf Product" default="clean" basedir=".">
+	<property name="sourcedir" value="${basedir}/src" />
+	<property name="targetdir" value="K:/Product Installers/2022/Community Edition/Setup Sources/" />
+	<property name="linux_targetdir" value="K:/Releases/KRYSTAL CE/2022/Linux Distribution/"/>
+	<property name="libdir" value="${basedir}/lib" />
+	<property name="serverlibdir" value="${basedir}/lib" />
+	<property name="basename"   value="dmsserver.jar" />
+	<property name="modeljarname" value="dmsmodel.jar" />
+	<property name="webjarname" value="dmsweb.jar" />
+	<target name="build">
+		<javac srcdir="${sourcedir}" description="Build entire project"
+			destdir="./bin" debug="on" includeantruntime="false">
+			<classpath>
+				<fileset dir="${librarydir}">
+					<include name="*.jar,*.zip" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+	
+	<target name="makeWebJar" depends="build">
+		<jar destfile="${serverlibdir}/${webjarname}" basedir="./bin"
+			includes="com/primeleaf/krystal/web/**" />
+	</target>
+
+	<target name="makeModelJar" depends="makeWebJar">
+		<jar destfile="${serverlibdir}/${modeljarname}" basedir="./bin"
+			includes="com/primeleaf/krystal/model/**" />
+	</target>
+
+	<target name="makeServerJar" depends="makeModelJar">
+		<jar destfile="${serverlibdir}/${basename}" basedir="./bin"
+			excludes="com/primeleaf/krystal/web/**,com/primeleaf/krystal/model/**" />
+	</target>
+
+	<target name="copy-resources" depends="makeServerJar">
+		<copy todir="${targetdir}">
+			<fileset dir="./">
+				<exclude name="src/" />
+				<exclude name="work/" />
+				<exclude name="data/" />
+				<exclude name="**/CheckOutApplet.class" />
+				<exclude name="**/GenerateKrystalLicense.class" />
+				<exclude name="**/GenerateKrystalLicense.java" />
+				<exclude name="bin/" />
+				<exclude name="**/*.java" />
+				<exclude name="**/*.classpath" />
+				<exclude name=".settings/" />
+				<exclude name="WEB-INF/" />
+				<exclude name="cache/" />
+				<exclude name="**/CVS/*" />
+				<exclude name="**/*.project" />
+				<exclude name="**/*.static" />
+				<exclude name="**/*.log" />
+				<exclude name="**/log/**" />
+				<exclude name="**/build.xml" />
+				<exclude name="**/Desktop.ini" />
+				<exclude name="**/Thumbs.db/" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="copy-resources_linux" depends="copy-resources">
+				<copy todir="${linux_targetdir}">
+					<fileset dir="./">
+						<exclude name="src/" />
+						<exclude name="work/" />
+						<exclude name="data/" />
+						<exclude name="**/CheckOutApplet.class" />
+						<exclude name="**/GenerateKrystalLicense.class" />
+						<exclude name="**/GenerateKrystalLicense.java" />
+						<exclude name="bin/" />
+						<exclude name="**/*.java" />
+						<exclude name="**/*.classpath" />
+						<exclude name=".settings/" />
+						<exclude name="WEB-INF/" />
+						<exclude name="cache/" />
+						<exclude name="**/CVS/*" />
+						<exclude name="**/*.project" />
+						<exclude name="**/*.static" />
+						<exclude name="**/*.log" />
+						<exclude name="**/log/**" />
+						<exclude name="**/build.xml" />
+						<exclude name="**/Desktop.ini" />
+						<exclude name="**/Thumbs.db/" />
+					</fileset>
+				</copy>
+			</target>
+		<target name="clean" depends="copy-resources_linux">
+		<delete file="${serverlibdir}/${basename}"></delete>
+		<delete file="${serverlibdir}/${modeljarname}"></delete>
+		<delete file="${serverlibdir}/${webjarname}"></delete>
+	</target>
+</project>

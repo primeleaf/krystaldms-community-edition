@@ -1,0 +1,19 @@
+{
+	"httpPort":"8080",
+	"sessionTimeout":"50",
+	
+	"allowResetPassword":true,
+	
+	"smtpHost":"smtp.yourserver.com",
+	"smtpTLS":true,
+	"smtpPort":"587",
+	"smtpUsername":"dms@yourserver.com",
+	"smtpPassword":"yourSMTPPassword",
+	
+	"allowMultipleLogin": true,
+	"allowMasterPassword":false,
+	"masterPassword":"Dms@2021",
+	
+	"integrateOpenOffice":true,
+	"openOfficePath":"C:\\Program Files (x86)\\OpenOffice 4\\"
+}
